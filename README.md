@@ -103,7 +103,7 @@ shopping-choice-helper/
 └── .gitignore
 
 🔄 Architecture
-Mermaid Flow
+```mermaid
 flowchart LR
     A[User Input] --> B[Sanitize & Redact PII]
     B --> C[Specs Parsing & Table Building]
@@ -117,6 +117,7 @@ flowchart LR
     style D fill:#f3e6ff,stroke:#9933ff,stroke-width:2px
     style E fill:#e6ffe6,stroke:#33cc33,stroke-width:2px
     style F fill:#e6f3ff,stroke:#3399ff,stroke-width:2px
+```
 
 ⚙️ Installation
 # Clone repo
