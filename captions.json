@@ -1,0 +1,15 @@
+{
+  "step1": "Entering Product A and Product B specifications. This allows the system to compare real features like price, battery, display, camera, storage and RAM side by side.",
+  "step2": "Selecting user priorities. This tells the system what matters most (e.g., battery, display, price). The engine weights these to decide the Best Fit.",
+  "step3": {
+    "Compact": "Compact Mode — What: Deterministic, no LLM. Why: Fast and reliable (no hallucination). How: Parses specs → builds table → scores priorities → computes Best Fit + reasons.",
+    "GPT-2": "GPT-2 Engine — What: Transformer language model. Why: Demonstrates SFT (structure) and DPO (preference alignment / RLHF). How: Generates structured comparison with temperature/top-p decoding.",
+    "FLAN-T5": "FLAN-T5 — What: Instruction-tuned LLM. Why: Produces concise, human-like reasoning. How: Deterministic comparator finds winner; T5 writes a single short ‘why’ line."
+  },
+  "step4": {
+    "Base": "Base Model — What: Pretrained GPT-2 with no custom training. Why: Baseline behavior for comparison. How: Generic decoding; may be unstructured.",
+    "SFT": "SFT (Supervised Fine-Tuning) — What: Train on prompt→response pairs. Why: Teaches the model format (Table → Pros/Cons → Best Fit). How: Cross-entropy on your labeled examples.",
+    "DPO": "DPO (Direct Preference Optimization) — What: RLHF-style alignment using chosen vs rejected answers. Why: Encourages clear decisions, discourages vague outputs. How: Optimizes preference margin vs a frozen reference."
+  },
+  "step5": "The system outputs: 1) Table of differences, 2) Pros & Cons, 3) Best Fit with a clear reason — showcasing GenAI with LLM lifecycle: SFT, RLHF (DPO), decoding controls."
+}
