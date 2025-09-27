@@ -91,6 +91,8 @@ graph TD
     E[Output Generation\\n\\n- Markdown Table\\n- Pros/Cons A & B\\n- Best Fit: A/B]
     F[User Interface (Streamlit)]
 
+    ```mermaid
+    
     %% Define Flow
     A -- User Input --> B
     B -- Clean Text --> C
@@ -105,7 +107,7 @@ graph TD
     style D fill:#f3e6ff,stroke:#9933ff,stroke-width:2px
     style E fill:#e6ffe6,stroke:#33cc33,stroke-width:2px
     style F fill:#e6f3ff,stroke:#3399ff,stroke-width:2px
-    
+    ```
 ⚙️ Installation
 
 Clone the repo:
