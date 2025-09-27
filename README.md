@@ -107,8 +107,8 @@ shopping-choice-helper/
 flowchart LR
     A[User Input] --> B[Sanitize & Redact PII]
     B --> C[Specs Parsing & Table Building]
-    C --> D[LLM (Base/SFT/DPO)]
-    D --> E[Structured Response (Pros/Cons + Best Fit)]
+    C --> D["LLM: Base / SFT / DPO"]
+    D --> E[Structured Response: Pros/Cons + Best Fit]
     E --> F[Final Output to UI]
 
     style A fill:#e6f3ff,stroke:#3399ff,stroke-width:2px
@@ -118,7 +118,6 @@ flowchart LR
     style E fill:#e6ffe6,stroke:#33cc33,stroke-width:2px
     style F fill:#e6f3ff,stroke:#3399ff,stroke-width:2px
 ```
-
 ⚙️ Installation
 # Clone repo
 git clone https://github.com/prasanth-joe35/shopping-choice-helper.git
